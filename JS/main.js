@@ -77,3 +77,18 @@ const tabs = document.querySelectorAll('[data-target]'),
             tab.classList.add('qualification__active')
         })
       })
+
+
+      /*=============== Project swiper ==================== */
+
+      let swiper = new Swiper('.project__container', {
+        cssMode : true,
+        loop: true,
+
+      
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+       
+      });
