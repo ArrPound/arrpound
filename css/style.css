@@ -557,7 +557,6 @@ img{
     margin-top: var(--mb-0-75);
     margin-bottom: var(--mb-0-5);
     font-size: var(--h3-font-size);
-    text-align: center;
 }
 
 .project__description {
