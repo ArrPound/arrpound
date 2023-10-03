@@ -564,6 +564,7 @@ img{
 }
 
 .project__button:hover .button__icon {
+    
     transform: rotateX(.25rem);
 }
 
