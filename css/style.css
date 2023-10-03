@@ -554,8 +554,10 @@ img{
 }
 
 .project__title {
-    font-size: var(--h3-font-size);
+    margin-top: var(--mb-0-75);
     margin-bottom: var(--mb-0-5);
+    font-size: var(--h3-font-size);
+    text-align: center;
 }
 
 .project__description {
@@ -567,7 +569,7 @@ img{
 }
 
 .swiper-container {
-    margin-top: 100px;
+    margin-top: 150px;
     position: relative;
 
   }
@@ -576,4 +578,5 @@ img{
   .swiper-button-next::after{
     content: '';
   }
+  
   
