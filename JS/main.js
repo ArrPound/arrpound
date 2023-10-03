@@ -4,6 +4,7 @@ var typed = new Typed('.auto-type', {
     typeSpeed: 150,
     backSpeed: 30,
     loop : true
+    
   });
 
 /*==================== menu show y hidden ==================*/
