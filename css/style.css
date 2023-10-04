@@ -555,6 +555,7 @@ img{
 /*============================ Project ========================== */
 
 .project__container {
+    margin-right: 40px;
     height: 85%;
     overflow: initial;
     padding: 30px;
