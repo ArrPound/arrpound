@@ -555,6 +555,8 @@ img{
 /*============================ Project ========================== */
 
 .project__container {
+    width: 90%;
+    height: 85%;
     overflow: initial;
     padding: 30px;
     border-radius: 1rem;
@@ -567,25 +569,23 @@ img{
 }
 
 .project__img {
-    margin-top: var(--mb-2-5);
+    margin-top: var(--mb-0-5);
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
 }
 
 .project__title {
-    margin-top: var(--mb-3);
-    margin-bottom: var(--mb-3);
+    margin-top: var(--mb-0-5);
+    margin-bottom: var(--mb-2);
     font-size: var(--h3-font-size);
     
 }
 
 .project__description {
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-2);
 }
-.project__button {
-    margin-top: var(--mb-3);
-}
+
 .project__button:hover .button__icon {
     transform: rotateX(.25rem);
 }
