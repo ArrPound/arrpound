@@ -567,22 +567,25 @@ img{
 }
 
 .project__img {
+    margin-top: var(--mb-2);
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
 }
 
 .project__title {
-    margin-top: var(--mb-0-75);
-    margin-bottom: var(--mb-1-5);
+    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-3);
     font-size: var(--h3-font-size);
     
 }
 
 .project__description {
-    margin-bottom: var(--mb-1-5);
+    margin-bottom: var(--mb-3);
 }
-
+.project__button {
+    margin-top: var(--mb-3);
+}
 .project__button:hover .button__icon {
     transform: rotateX(.25rem);
 }
