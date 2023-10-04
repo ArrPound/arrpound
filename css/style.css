@@ -567,7 +567,7 @@ img{
 }
 
 .project__img {
-    margin-top: var(--mb-2);
+    margin-top: var(--mb-3);
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
