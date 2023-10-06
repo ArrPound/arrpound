@@ -116,7 +116,7 @@ const tabs = document.querySelectorAll('[data-target]'),
 
       window.addEventListener('scroll', scrollActive)
 
-      
+
 
       /* ============== Change background header ========== */
 
@@ -131,3 +131,40 @@ const tabs = document.querySelectorAll('[data-target]'),
       }
 
       window.addEventListener('scroll', scrollHeader)
+
+    /*  =============== dark theme ================= */
+
+      const themeButton = document.getElementById('theme-button')
+      const darkTheme = 'dark-theme'
+      const iconTheme = 'uil-sun'
+      
+      // if user selected
+      const selectedTheme = localStorage.getItem('selected-theme')
+      const selectedIcon = localStorage.getItem('selected-icon')
+
+      const getCurrentTheme = document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+      const getCurrentIcon = document.body.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+      if (selectedTheme) {
+
+        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+        document.body.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+      }
+
+        //// active / deactive the theme 
+      themeButton.addEventListener('click', () => {
+
+        // add or remove dark / icon
+        document.body.classList.toggle(darkTheme)
+        themeButton.classList.toggle(iconTheme)
+
+        // save theme 
+        localStorage.setItem('selected-theme', getCurrentTheme())
+        localStorage.setItem('selected-icon', getCurrentIcon())
+
+
+      })
+
+
+
+
