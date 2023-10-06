@@ -23,6 +23,10 @@
     --input-color: hsl(var(--hue-color), 70%, 90%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
+    --social-color: hsl(var(--hue-color), 0%, 0%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 50%, 80%);
+
     
     /*============== font and typography ===========*/
     --body-font: 'Poppins', sans-serif;
@@ -64,7 +68,7 @@
 @media screen and (min-width: 968px) {
     :root{
     --big-font-size: 3rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -78,12 +82,16 @@
     /* ========== Dark Theme ===========  */
     body.dark-theme {
          /*=========== HSL color mode ============== */
-    --first-color-second: hsl(var(--hue-color), 70%, 50%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 10%, 45%);
-    --input-color: hsl(var(--hue-color), 70%, 90%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
+    --first-color-second: hsl(var(--hue-color), 40%, 10%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 10%, 40%);
+    --input-color: hsl(var(--hue-color), 30%, 15%);
+    --body-color: hsl(var(--hue-color), 8%, 8%);
+    --container-color: hsl(var(--hue-color), 30%, 15%);
+    --social-color: hsl(var(--hue-color), 0%, 100%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 50%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 30%);
+
     }
 
 /* ================= Button Dark Theme ============ */
@@ -303,7 +311,7 @@ img{
 
 .home__social-icon {
     font-size: 1.25rem;
-    color: black;
+    color: var(--social-color);
 }
 .home__social-icon:hover {
     color: var(--first-color);
@@ -602,9 +610,9 @@ img{
 .project__container {
     background-color: #f4f4f4;
     margin-right: 40px;
-    height: 80%;
+    height: 83%;
     overflow: initial;
-    padding: 30px;
+    padding: 20px;
     border-radius: 1rem;
     border: 3px solid #000000;
     box-shadow: 5px 5px 0 #000000,
@@ -612,26 +620,28 @@ img{
 }
 
 .project__content {
+    display: flex;
     margin-top: var(--mb-0-5);
     padding: 0 1.5rem;
 }
 
 .project__img {
-    margin-top: var(--mb-0-5);
+    margin-top: var(--mb-0-25);
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    
 }
 
 .project__title {
     margin-top: var(--mb-0-5);
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1-5);
     font-size: var(--h3-font-size);
-    
+    color: #000000;
 }
 
 .project__description {
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1-5);
 }
 
 .project__button:hover .button__icon {
@@ -785,3 +795,218 @@ img{
     text-align: center;
     margin-top: var(--mb-3);
 }
+
+::-webkit-scrollbar {
+    width: .50rem;
+    background-color: var(--scroll-bar-color);
+} 
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: .3rem;
+} 
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--title-color);
+}
+
+ /* ================ Media quaries =================  */
+
+        /* for phone size  */
+
+    @media screen and (max-width: 350px) {
+    
+        :root{
+            
+            --big-font-size: 1.8rem;
+            --h1-font-size: 1.2rem;
+            --h2-font-size: 1rem;
+            --h3-font-size: .890rem;
+            --normal-font-size: .838rem;
+            --small-font-size: .700rem;
+            --smaller-font-size: .75rem;
+        }
+   
+
+
+    .container {
+         margin-left: var(--mb-1);
+         margin-right: var(--mb-1);
+    }
+
+    .nav__menu {
+        padding: 2rem .25rem 4rem;
+    }
+    .nav__list {
+        column-gap: 0;
+    }
+    .nav__logo {
+        margin-left: 10px;
+    }
+    .nav__btns {
+        margin-right: 10px;
+    }
+    .home__container {
+        margin-left: 1.5rem;
+    }
+    
+    .home__content {
+        grid-template-columns: .25fr 3fr;
+    }
+    .about__description {
+        font-size: var(--smaller-font-size);
+        margin: 0 10px 0 10px;
+        margin-bottom: var(--mb-0-75);
+    }
+    .skills__content {
+        margin: 0 10px 0 10px;
+    }
+    .skills__title {
+        font-size: var(--small-font-size);
+    }
+    .skills__list {
+        margin-right: 3rem;
+    }
+    .qualification__data {
+        gap: .5rem;
+        margin: 0 10px 0 10px;
+        padding: 20px;
+    }
+    .project__container{
+        height: 87%;
+        grid-template-columns: max-content;
+        justify-content: center;
+        margin: 0 20px 0 20px;
+    }
+
+    .contact__container {
+        margin: 0 10px 0 10px;
+    }
+    .footer__container {
+        margin: 0 20px 0 20px;
+    }
+    .footer__description{
+        margin: var(--mb-0-75) var(--mb-0-5) var(--mb-0-75) var(--mb-0-5);
+    }
+  }
+
+        /* for tablet */
+
+    @media screen and (min-width: 500px){
+
+        :root{
+            
+            --big-font-size: 1.7rem;
+        }
+
+        .home__content {
+            grid-template-columns: max-content 1fr 1fr;
+        }
+        .home__data {
+            grid-column: initial;   
+        }
+       
+        .about__container,
+        .contact__container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+       
+        .about__img{
+            margin-top: 4rem;
+            width: 200px;
+        }
+
+        .contact__information {
+            margin-top: 5.5rem;
+            
+        }
+        .project__container{
+            height: 80%;
+            width: 70%;
+            grid-template-columns: max-content;
+            justify-content: center;
+            margin: 0 0px 0 15%;
+        }
+
+        .footer__container {
+            height: 20%;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .footer__links{
+            flex-direction: row;
+            column-gap: 2rem;
+        }
+        .footer__socials{
+            justify-self: flex-end;
+            margin-right: 1em;
+        }
+        
+    }
+
+    @media screen and (min-width: 768px){
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section {
+            padding: 6rem 0 2rem;
+        }
+        .section__subtitle{
+            margin-bottom: 4rem;
+        }
+        .header {
+            top: 0;
+            bottom: initial;
+        }
+        .header,
+        .main,
+        .footer__container{
+            padding: 0 1rem;
+        }
+
+
+        .nav {
+            height: calc(var(--header-height) + 1.5rem); 
+        }
+        .nav__icon,
+        .nav__close,
+        .nav__toggle {
+            display: none;
+        }
+        .nav__list {
+            display: flex;
+            column-gap: 2rem;
+        }
+        .home__scroll {
+            display: block;
+        }
+
+        .home__scroll-button {
+            
+            margin: 3rem 0 3rem 3rem;
+        }
+
+        .about__container {
+            column-gap: 5rem;
+        }
+        .about__img {
+            width: 250px;
+            margin-top: 3rem;
+        }
+        .project__img {
+            width: 350px;
+        
+        }
+        .footer__container {
+            height: 20%;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .footer__links{
+            display: none;
+            margin-top: 35%;
+            flex-direction: row;
+            column-gap: 2rem;
+        }
+        .footer__socials{
+            margin-top: 5rem;
+            margin-right: 40%;
+        }
+    }
