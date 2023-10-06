@@ -1011,7 +1011,7 @@ img{
         }
     }
 
-    @media screen and (min-width: 2000px){
+    @media screen and (min-width: 1600px){
        
         .project__container{
             height: 35%;
