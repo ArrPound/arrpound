@@ -1010,3 +1010,16 @@ img{
             margin-right: 40%;
         }
     }
+
+    @media screen and (min-width: 2000px){
+       
+        .project__container{
+            height: 35%;
+            width: 70%;
+            grid-template-columns: max-content;
+            justify-content: center;
+            margin: 0 0px 0 15%;
+        }
+    }
+  
+  
