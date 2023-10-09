@@ -511,6 +511,9 @@ img{
 .skills__css {
     width: 70%;
 }
+.skills__boot {
+    width: 70%;
+}
 .skills__js {
     width: 80%;
 }
@@ -905,7 +908,7 @@ img{
             grid-column: initial;   
         }
        
-        .about__container,
+        
         .contact__container{
             grid-template-columns: repeat(2, 1fr);
         }
@@ -1040,7 +1043,7 @@ img{
     .about__description {
         text-align: center;
         margin-top: var(--mb-3);
-        font-size: var(--smaller-font-size);
+       
 
 }
    
