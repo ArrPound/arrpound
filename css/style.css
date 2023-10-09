@@ -793,7 +793,7 @@ img{
     font-size: large;
 }
 .footer__description{
-    font-size: var(--smaller-font-size);
+    font-size: 10px;
     letter-spacing: 1px;
     color: #fff;
     text-align: center;
@@ -893,13 +893,6 @@ img{
         margin: 0 20px 0 20px;
     }
    
-    .footer__description{
-        font-size: 5px;
-        letter-spacing: 1px;
-        color: #fff;
-        text-align: center;
-        margin: var(--mb-0-75) var(--mb-0-5) var(--mb-0-75) var(--mb-0-5);
-    }
   }
 
         /* for tablet */
@@ -965,13 +958,7 @@ img{
             justify-self: flex-end;
             margin-right: 1em;
         }
-        .footer__description{
-            font-size: var(--smaller-font-size);
-            letter-spacing: 1px;
-            color: #fff;
-            text-align: center;
-            margin-top: var(--mb-3);
-        }
+       
     }
 
     @media screen and (min-width: 768px){
@@ -1054,13 +1041,7 @@ img{
             margin-top: 5rem;
             margin-right: 40%;
         }
-        .footer__description{
-            font-size: var(--smaller-font-size);
-            letter-spacing: 1px;
-            color: #fff;
-            text-align: center;
-            margin-top: var(--mb-3);
-        }
+       
     }
 
    
@@ -1082,12 +1063,6 @@ img{
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
-.footer__description{
-    font-size: var(--smaller-font-size);
-    letter-spacing: 1px;
-    color: #fff;
-    text-align: center;
-    margin-top: var(--mb-3);
-}
+
 }
   
