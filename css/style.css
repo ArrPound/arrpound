@@ -874,6 +874,11 @@ img{
         margin: 0 10px 0 10px;
         padding: 20px;
     }
+    .qualification__calender {
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+    }
+
     .project__container{
         height: 87%;
         grid-template-columns: max-content;
@@ -929,6 +934,12 @@ img{
             margin-top: 5.5rem;
             
         }
+
+        .qualification__calender {
+            font-size: var(--smaller-font-size);
+            color: var(--text-color-light);
+        }
+
         .project__container{
             height: 80%;
             width: 70%;
@@ -1009,6 +1020,11 @@ img{
         .about__img {
             width: 280px;
         }
+
+        .qualification__calender {
+            font-size: var(--smaller-font-size);
+            color: var(--text-color-light);
+        }
         .project__img {
             width: 350px;
         
@@ -1043,9 +1059,10 @@ img{
     .about__description {
         text-align: center;
         margin-top: var(--mb-3);
-       
-
 }
-   
+    .qualification__calender {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
 }
   
