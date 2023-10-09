@@ -894,7 +894,7 @@ img{
     }
    
     .footer__description{
-        font-size: var(--smaller-font-size);
+        font-size: 5px;
         letter-spacing: 1px;
         color: #fff;
         text-align: center;
@@ -966,7 +966,7 @@ img{
             margin-right: 1em;
         }
         .footer__description{
-            font-size: 5px;
+            font-size: var(--smaller-font-size);
             letter-spacing: 1px;
             color: #fff;
             text-align: center;
