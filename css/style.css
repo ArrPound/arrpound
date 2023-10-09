@@ -1083,7 +1083,7 @@ img{
     color: var(--text-color-light);
 }
 .footer__description{
-    font-size: var(--smaller-font-size);
+    font-size: 5px;
     letter-spacing: 1px;
     color: #fff;
     text-align: center;
