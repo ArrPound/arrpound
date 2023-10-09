@@ -918,7 +918,6 @@ img{
             text-align: center;
             letter-spacing: .5px;
             word-spacing: .5px;
-            margin-bottom: var(--mb-3);
             font-size: var(--small-font-size);
             
         }
@@ -959,7 +958,7 @@ img{
             padding: 6rem 0 2rem;
         }
         .section__subtitle{
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
         .header {
             top: 0;
