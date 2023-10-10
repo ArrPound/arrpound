@@ -159,8 +159,8 @@ const tabs = document.querySelectorAll('[data-target]'),
         themeButton.classList.toggle(iconTheme)
 
         // save theme 
-        localStorage.setItem('selected-theme', getCurrentTheme())
-        localStorage.setItem('selected-icon', getCurrentIcon())
+        localStorage.setItem('selected-theme', getCurrentTheme)
+        localStorage.setItem('selected-icon', getCurrentIcon)
 
 
       })
