@@ -282,6 +282,9 @@ img{
 
 .active-link {
     color: var(--first-color);
+    border-bottom: solid 2px var(--first-color);
+    padding-bottom: 6px;
+    border-radius: 1px;
 }
 
 /* change header background */
