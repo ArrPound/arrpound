@@ -532,6 +532,12 @@ img{
     width: 80%;
 }
 .skills__react {
+    width: 60%;
+}
+.skills__sass {
+    width: 70%;
+}
+.skills__Figma {
     width: 50%;
 }
 .skills__java {
