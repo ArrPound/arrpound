@@ -541,17 +541,17 @@ img{
     width: 50%;
 }
 
-.skills__java {
-    width: 50%;
+.skills__nodejs {
+    width: 70%;
 }
 .skills__sql {
+    width: 70%;
+}
+.skills__express {
     width: 60%;
 }
-.skills__php {
-    width: 20%;
-}
-.skills__lar {
-    width: 20%;
+.skills__aws {
+    width: 50%;
 }
 
 
